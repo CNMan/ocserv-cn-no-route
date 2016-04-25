@@ -14,7 +14,7 @@ cat delegated-afrinic-extended-latest delegated-apnic-extended-latest delegated-
 cat delegated-all-latest | grep ipv4 | grep CN | awk -F\| '{ printf("%s/%d\n", $4, 32-log($5)/log(2)) }' >chnroute.txt
 ```
 
-2、合并chnroute.txt(336935680 IPs)，生成chnroute_merged.txt(336935680 IPs)
+2、合并chnroute.txt(337090304 IPs)，生成chnroute_merged.txt(337090304 IPs)
 
 3、将所有/12及以上改成/11，并合并，生成11_143.txt(713031680 IPs)
 
